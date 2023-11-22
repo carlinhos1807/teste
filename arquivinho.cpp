@@ -1,7 +1,12 @@
 #include <iostream>
+#include <string>
 
+using namespace std;
+string& s6(string a) {return a;}
 int main(void)
 {
+    string a = "helloo";
+
     std::string linha;
     int linhas = 0;
 
@@ -9,8 +14,4 @@ int main(void)
         linhas++;
 
     std::cout << linhas << std::endl;
-
-    // Adicionando uma variável não utilizada para gerar um aviso
-    int variavel_nao_utilizada;
-    return 0;
 }
